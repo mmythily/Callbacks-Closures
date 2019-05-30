@@ -1,6 +1,5 @@
 var words = ["ground", "control", "to", "major", "tom"];
 
-
 var wordlength = words.map(function(word) {
     return word.length;
 });
