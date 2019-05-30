@@ -2,18 +2,18 @@ var countdownGenerator = function (x) {
 
     var list = [`T-minus `, 'Blast Off!', 'Rockets already gone, bub!']
 
-    let i = x;
+    let countdown = x;
     
     return function() {
-        if (i > 0) {
-            console.log(list[0] + i + '...');
-            i--;
+        if (countdown > 0) {
+            console.log(list[0] + countdown + '...');
+            countdown--;
         } 
-        else if (i === 0){
+        else if (countdown === 0){
             console.log(list[1]);
-            i--;
+            countdown--;
         }
-        else if (i < 0) {
+        else if (countdown < 0) {
             console.log(list[2]);
         }
     }
